@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./tianqi.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <title>腾讯天气</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="nav">
+            <div id="location">
+                <div id="fanhui">
+                    <a href="#">
+                        <i class="iconfont">&#xe685;</i>
+                    </a>
+
+                </div>
+                <div id="search">
+                    <a class="xuanzhi" href="#">
+                        <i class="iconfont">&#xe628;</i>
+                        <span class="diqudiqu">北京市 海淀区</span>
+                    </a>
+
+
+                </div>
+                <div id="zhuanfa1">
+                    <a class="zhuanfaicon" href="#">
+                        <i class="iconfont">&#xe604;</i>
+                    </a>
+                </div>
+            </div>
+            <div id="youc">
+                <div id="you" class="clearfix">
+                    <div id="til">35</div>
+                    <div id="value">优</div>
+                </div>
+
+            </div>
+            <div id="temperature">
+                27°
+            </div>
+            <div id="weather">
+                <p id="text-weather">晴</p>
+            </div>
+            <div id="other_weather">
+                <p class="txt">湿度 27%</p>
+                <p class="show-txt">东风 1级</p>
+            </div>
+            <div id="words">
+                <p class="tips">现在的温度比较舒适~</p>
+                <p class="tips1">光芒透过云缝，洒向大地~</p>
+            </div>
+
+        </div>
+        <div id="introduce">
+            <div id="item">
+                <div id="top">
+                    <p class="date">今天</p>
+                    <p class="top-temperature">27/16°</p>
+                </div>
+                <div id="bottom">
+                    <p class="top-weather">多云</p>
+                    <img class="intro_img11" src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/01.svg" alt="">
+
+
+                </div>
+            </div>
+            <div id="line">
+
+            </div>
+            <div id="item">
+                <div id="top">
+                    <p class="date">明天</p>
+                    <p class="top-temperature">26/17°</p>
+                </div>
+                <div id="bottom">
+                    <p class="top-weather">多云</p>
+                    <img class="intro_img11" src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/01.svg" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div id="hour">
+            <ul class="hour-ol">
+                <li class="hours-items">
+                    <p class="txt-time">16:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">17:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">18:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">19:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">19:19</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">20:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">21:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">22:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">23:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">明天</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">01:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">02:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">03:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">04:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">05:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">05:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">06:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">07:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">08:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+
+                <li class="hours-items">
+                    <p class="txt-time">09:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">10:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">11:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">12:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">13:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <!-- <li class="hours-items">
+                    <p class="txt-time">14:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li>
+                <li class="hours-items">
+                    <p class="txt-time">15:00</p>
+                    <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg" class="hour_icon">
+                    <p class="txt-degree">26°</p>
+                </li> -->
+            </ul>
+        </div>
+        <div id="middle">
+
+            <div id="yidong">
+                <div id="up">
+                    <ul id="upul">
+                        <li class="up-items">
+                            <p class="day1">昨天</p>
+                            <p class="update">05/24</p>
+                            <p class="weather">多云</p>
+                            <!-- <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon"> -->
+                            <img src="./img/color-256/100.png" class="upicon">
+                        </li>
+                        <li class="up-items">
+                            <p class="day1">今天</p>
+                            <p class="update">05/14</p>
+                            <p class="weather">阴</p>
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon">
+                        </li>
+                        <li class="up-items">
+                            <p class="day1">明天</p>
+                            <p class="update">05/14</p>
+                            <p class="weather">阴</p>
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon">
+                        </li>
+                        <li class="up-items">
+                            <p class="day1">后天</p>
+                            <p class="update">05/14</p>
+                            <p class="weather">多云</p>
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon">
+                        </li>
+                        <li class="up-items">
+                            <p class="day1">昨天5</p>
+                            <p class="update">05/14</p>
+                            <p class="weather">阴</p>
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon">
+                        </li>
+                        <li class="up-items">
+                            <p class="day1">昨天6</p>
+                            <p class="update">05/14</p>
+                            <p class="weather">阴</p>
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon">
+                        </li>
+                        <li class="up-items">
+                            <p class="day1">昨天7</p>
+                            <p class="update">05/14</p>
+                            <p class="weather">阴</p>
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon">
+                        </li>
+                        <li class="up-items">
+                            <p class="day1">昨天8</p>
+                            <p class="update">05/14</p>
+                            <p class="weather">阴</p>
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="upicon">
+                        </li>
+                    </ul>
+                </div>
+                <div id="echarts-div">
+                    <div id="echarts"></div>
+                </div>
+
+                <div id="under">
+                    <ul id="urul">
+                        <li class="under-items">
+                            <img src="./img/color-256/150.png"
+                                class="uricon">
+                            <p class="weather1">晴</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                        <li class="under-items">
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="uricon">
+                            <p class="weather1">晴</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                        <li class="under-items">
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="uricon">
+                            <p class="weather1">晴</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                        <li class="under-items">
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="uricon">
+                            <p class="weather1">晴</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                        <li class="under-items">
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="uricon">
+                            <p class="weather1">晴天</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                        <li class="under-items">
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="uricon">
+                            <p class="weather1">晴</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                        <li class="under-items">
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="uricon">
+                            <p class="weather1">晴</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                        <li class="under-items">
+                            <img src="//mat1.gtimg.com/pingjs/ext2020/weather/mobile2.0/assets/weather/day/00.svg"
+                                class="uricon">
+                            <p class="weather1">晴</p>
+                            <p class="wind">微风</p>
+                            <p class="wind1">3级</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="tuijian">
+            <div id="tuiyidong">
+                <div id="tuijian-ul">
+                    <ul id="first-up">
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon" src="./img/images/1.png" alt="">
+                            </div>
+                            <!-- <i class="iconfont">&#xe63c;</i> -->
+                            <p class="fitem1">良0</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="items">
+                            <!-- <div id="icon"><i class="iconfont">&#xe62d;</i></div> -->
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0xMiA0LjhhMiAyIDAgMSAwIDIgMiAyIDIgMCAwIDAtMi0yem0wIDIuOGEuOC44IDAgMSAxIC44LS44LjguOCAwIDAgMS0uOC44ek0xMiAxMGEyIDIgMCAxIDAgMiAyIDIgMiAwIDAgMC0yLTJ6bTAgMi44YS44LjggMCAxIDEgLjgtLjguOC44IDAgMCAxLS44Ljh6TTEyIDE1LjJhMiAyIDAgMSAwIDIgMiAyIDIgMCAwIDAtMi0yem0wIDIuOGEuOC44IDAgMSAxIC44LS44LjguOCAwIDAgMS0uOC44eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTE5LjIgMTEuNmEuOC44IDAgMSAwIDAtMS42aC0yVjYuNGgyYS44LjggMCAxIDAgMC0xLjZoLTJ2LS40QTIuNDEgMi40MSAwIDAgMCAxNC44IDJIOS4yYTIuNDEgMi40MSAwIDAgMC0yLjQgMi40di40aC0yYS44LjggMCAwIDAgMCAxLjZoMlYxMGgtMmEuOC44IDAgMSAwIDAgMS42aDJ2My42aC0yYS44LjggMCAxIDAgMCAxLjZoMnYyLjhBMi40MSAyLjQxIDAgMCAwIDkuMiAyMmg1LjZhMi40MSAyLjQxIDAgMCAwIDIuNC0yLjR2LTIuOGgyYS44LjggMCAxIDAgMC0xLjZoLTJ2LTMuNnptLTMuNiA3LjZhMS4yIDEuMiAwIDAgMS0xLjIgMS4ySDkuNmExLjIgMS4yIDAgMCAxLTEuMi0xLjJWNC44YTEuMiAxLjIgMCAwIDEgMS4yLTEuMmg0LjhhMS4yIDEuMiAwIDAgMSAxLjIgMS4yeiIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <p class="fitem1">良0</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe6d3;</i></div> -->
+                            <p class="fitem1">良0</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe600;</i></div> -->
+                            <p class="fitem1">良0</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="first-under">
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"> <i class="iconfont">&#xe67a;</i></div> -->
+                            <p class="fitem1">良1</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe691;</i></div> -->
+                            <p class="fitem1">良1</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe6fd;</i></div> -->
+                            <p class="fitem1">良1</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe717;</i></div> -->
+                            <p class="fitem1">良1</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tuijian-ul">
+                    <ul id="first-up">
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe629;</i></div> -->
+                            <p class="fitem1">良</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe62a;</i></div> -->
+                            <p class="fitem1">良</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe608;</i></div> -->
+                            <p class="fitem1">良</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe626;</i></div> -->
+                            <p class="fitem1">良</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul id="first-under">
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe74c;</i></div> -->
+                            <p class="fitem1">较舒适</p>
+                            <p class="fitem2">舒适度</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe606;</i></div> -->
+                            <p class="fitem1">良</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe669;</i></div> -->
+                            <p class="fitem1">良</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="tuiicon">
+                                <img class="iicon"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPGc+DQogICAgICAgIDxwYXRoIGZpbGw9IiNhNGFkZTAiIGQ9Ik0yMC40NiAxMGgtMS4wNWwtMS01Ljc1QTEuNTQgMS41NCAwIDAgMCAxNi44NyAzSDcuMTNhMS41NCAxLjU0IDAgMCAwLTEuNTEgMS4yOUw0LjU5IDEwaC0xQTEuNTYgMS41NiAwIDAgMCAyIDExLjYxdjUuNDhhMS41NSAxLjU1IDAgMCAwIDEuNTQgMS41NmguNzd2MS41OWEuNzYuNzYgMCAwIDAgLjc2Ljc2Ljc3Ljc3IDAgMCAwIC43Ni0uNzZ2LTEuNTloMTIuM3YxLjU5YS43Ny43NyAwIDAgMCAuNzYuNzYuNzYuNzYgMCAwIDAgLjc2LS43NnYtMS41OWguNzdBMS41NSAxLjU1IDAgMCAwIDIyIDE3LjA5di01LjQ4QTEuNTYgMS41NiAwIDAgMCAyMC40NiAxMHpNNi44OSA1LjIyYS43Ny43NyAwIDAgMSAuNzYtLjY1aDguN2EuNzcuNzcgMCAwIDEgLjc2LjY1TDE3LjkgMTBINi4xek0yMC40NiAxNi4zYS43OC43OCAwIDAgMS0uNzcuNzlINC4zMWEuNzguNzggMCAwIDEtLjc3LS43OXYtMy45MWEuNzcuNzcgMCAwIDEgLjc3LS43OGgxNS4zOGEuNzcuNzcgMCAwIDEgLjc3Ljc4eiIgLz4NCiAgICAgICAgPHBhdGggZmlsbD0iI2E0YWRlMCIgZD0iTTYuNjIgMTMuNTdhLjc4Ljc4IDAgMSAwIC43Ni43OC43Ny43NyAwIDAgMC0uNzYtLjc4ek0xNy4zOCAxMy41N2EuNzguNzggMCAxIDAgLjc3Ljc4Ljc3Ljc3IDAgMCAwLS43Ny0uNzh6IiAvPg0KICAgICAgICA8cmVjdCBmaWxsPSIjYTRhZGUwIiB4PSI4LjU0IiB5PSIxMy41NyIgd2lkdGg9IjYuOTIiIGhlaWdodD0iMS41NyIgcng9Ii43NyIgcnk9Ii43NyIgLz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                                    alt="">
+                            </div>
+                            <!-- <div id="icon"><i class="iconfont">&#xe61b;</i></div> -->
+                            <p class="fitem1">良</p>
+                            <p class="fitem2">空气污染扩散条件</p>
+                            <div class="tankuang">
+                                <div class="beijingt"></div>
+                                <div class="tuijieshao">
+                                    <div class="zhishu1">舒适度指数</div>
+                                    <div class="zhishu2">
+                                        <p class="yuju">白天温度适宜，风力不大，相信您再这样的
+                                            天气条件下，应会感到无比清爽和舒适
+                                        </p>
+                                        <button class="get">我知道了</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="tankuang1">
+                        <div class="beijingt1"></div>
+                        <div class="tuijieshao1">
+                            <img class="skyimg" src="./img/images/shanchu.png" alt="删除">
+                            <div class="skyzhishu">
+                                <p class="kqzs">空气质量指数</p>
+                                <p class="aqis">74</p>
+                                <p class="liang">良</p>
+                            </div>
+                            <table class="skyzhishu1">
+                                <tr>
+                                    <td>
+                                        <p class="val">54</p>
+                                        <p class="titl">PM2.5</p>
+                                    </td>
+                                    <td>
+                                        <p class="val">54</p>
+                                        <p class="titl">PM10</p>
+
+                                    </td>
+                                    <td>
+                                        <p class="val">54</p>
+                                        <p class="titl">SO2</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="val">54</p>
+                                        <p class="titl">NO2</p>
+                                    </td>
+                                    <td>
+                                        <p class="val">54</p>
+                                        <p class="titl">O3</p>
+                                    </td>
+                                    <td class="val2">
+                                        <p class="val">54</p>
+                                        <p class="titl">CO</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="zhuanfa">
+                        <div class="beijingt2"></div>
+                        <div class="quxiao">
+                            <img class="zhuanfaimg" src="./img/images/取消.png" alt="取消">
+                            <div id="zhuanquxiao">取消</div>
+                        </div>
+                    </div>
+                    <div id="search_tanchuang">
+                        <div class="search_container">
+                            <div id="search_quxiao">
+                                <input class="search_diqu" type="text" placeholder="搜索地区">
+                               <div id="search_quxiao1">取消</div>
+                            </div>
+                            <div id="lishi_remen">
+                                <div id="lishi">
+                                    <p class="search_city1">历史记录</p>
+                                    <img class="lajt" src="./img/images/垃圾桶.png" alt="lajitong">
+                                 <ul class="lcp_ul">
+                                    <li class="acity yc lcp_city"></li>
+                                    <li class="acity yc center_city lcp_city"></li>
+                                    <li class="acity yc lcp_city"></li>
+                                </ul>
+                                </div>
+                                <p class="search_city">热门城市</p>
+                                <ul class="ocp_ul">
+                                    <li class="acity ocp_city">北京</li>
+                                    <li class="acity ocp_city center_city">上海</li>
+                                    <li class="acity ocp_city">广州</li>
+                                    <li class="acity ocp_city">深圳</li>
+                                    <li class="acity ocp_city center_city">郑州</li>
+                                    <li class="acity ocp_city">西安</li>
+                                    <li class="acity ocp_city">南京</li>
+                                    <li class="acity ocp_city center_city">杭州</li>
+                                    <li class="acity ocp_city">武汉</li>
+                                    <li class="acity ocp_city">成都</li>
+                                    <li class="acity ocp_city center_city">沈阳</li>
+                                    <li class="acity ocp_city">天津</li>
+                                </ul>
+                            </div>
+                            <div class="search_tuijian">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <ul id="lunbo11">
+        <img class="lunbo1" src="./img/images/轮播1.png" alt="">
+        <img class="lunbo2" src="./img/images/轮播2.png" alt="">
+    </ul>
+    <div id="bottom">
+        <div id="ct-link">
+            <a href="http://m.weather.com.cn/" id="link">数据来源于中国天气网</a>
+        </div>
+        <div id="copyright">
+            Copyright © 1998 - 2021 Tencent. All Rights Reserved
+        </div>
+    </div>
+    <!-- <button id="shiyishi">试一试</button> -->
+
+
+    </div>
+    <script src="./echarts.min.js"></script>
+    <script src="./tianqi.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/myecharts.js"></script>
+    <script src="./js/fastclick.js"></script>
+
+
+
+</body>
+
+</html>
